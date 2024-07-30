@@ -37,7 +37,6 @@ const dbEntry = async (data) => {
 }
 const fetchStockData = async () => {
     try {
-        console.log("API KEY: ", config.secretKey)
         const responses = await Promise.all(symbols.map(symbol =>
             axios.post(`https://api.livecoinwatch.com/coins/single`, {
                 "currency":"USD",
