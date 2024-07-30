@@ -1,3 +1,31 @@
+# Starting the Project
+
+## Install all dependencies of mongodb if not present already:
+
+```brew tap mongodb/brew```
+
+```brew update```
+
+```brew install mongodb-community@7.0```
+
+## Start the mongodb
+
+```brew services start mongodb-community@7.0```
+
+## Start the Server
+
+``` cd server```
+
+```node server.js```
+
+## Start the react app
+
+``` cd ..```
+
+``` npm start```
+
+You should now be able to see the React app showing last 20 entries of 5 Cryptos namely - Ethereum, Bitcoin, Tether, BNB, Solana fetched from LiveCoinWatch Api and stored in mongodb and fetched real-time to the react client.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
